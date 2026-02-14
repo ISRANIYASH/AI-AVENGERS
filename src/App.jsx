@@ -6,7 +6,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import OccupancyGrid from "./pages/OccupancyGrid";
 import RentTracker from "./pages/RentTracker";
 import SafetyControl from "./pages/SafetyControl";
-import Profile from "./pages/Profile";
+import Profile from "./pages/Profile"; // 👈 ADD THIS
 
 export default function App() {
   return (
@@ -18,7 +18,7 @@ export default function App() {
       <Route path="/admin/occupancy" element={<OccupancyGrid />} />
       <Route path="/admin/rent" element={<RentTracker />} />
       <Route path="/admin/safety" element={<SafetyControl />} />
-      <Route path="/profile" element={<Profile />} />
+      <Route path="/profile" element={<Profile />} /> {/* 👈 ADD THIS */}
     </Routes>
   );
 }
